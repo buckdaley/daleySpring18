@@ -13,24 +13,24 @@ public class Main {
 
 
         System.out.println("Enter a hexadecimal number: ");
-        userString = scnr.next();
+        userString = scnr.next(); // just adding a few comments
 
         newUserString = userString.substring(0, 2);
 
 
         if (newUserString.equals("0x")) {
-            userString = userString.substring(2);
+            userString = userString.substring(2); // so that I can commit my changes
         }
 
         userString = userString.toUpperCase();
         int i = userString.length() - 1;
         long nextPower = 0;
-        int characterValue = 0;
+        int characterValue = 0; // and then push them to my new git repository
 
         while ( i > -1 ) {
 
             if (userString.charAt(i) == '1') {
-                characterValue = 1;
+                characterValue = 1; // because that's a very useful thing
             }
             if (userString.charAt(i) == '2') {
                 characterValue = 2;
@@ -82,5 +82,6 @@ public class Main {
         }
 
         System.out.println("Your number is " + hexValue + " in decimal");
+        System.out.print("    ");
     }
 }
